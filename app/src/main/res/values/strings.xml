@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Fartsy</string>
+
+
+    <!--Main Screen-->
+    <string name="main_btn_Text">Fart</string>
+
+    <!--Feedback Screen-->
+    <string name="et_subject">Subject</string>
+    <string name="et_message">Message</string>
+    <string name="btn_send">Send Feedback</string>
+
+
+    <!--NAV-->
+    <string name="nav_fart_list">Fart List</string>
+    <string name="nav_crono">Fart Prank</string>
+    <string name="nav_trap">Fart Trap</string>
+    <string name="nav_feedback">Feedback</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Fart List-->
+    <string name="fart_1">Blowing</string>
+    <string name="fart_2"></string>
+    <string name="fart_3">Quickly</string>
+    <string name="fart_4"></string>
+    <string name="fart_5"></string>
+    <string name="fart_6"></string>
+    <string name="fart_7"></string>
+    <string name="fart_8">Oopsy</string>
+    <string name="fart_9">Mosquito</string>
+    <string name="fart_10">Kid Mosquito</string>
+    <string name="fart_11">Smother</string>
+    <string name="fart_12"></string>
+    <string name="fart_13"></string>
+    <string name="fart_14"></string>
+    <string name="fart_15">Fasty</string>
+    <string name="fart_16"></string>
+    <string name="fart_17"></string>
+    <string name="fart_18">Phantom Fart</string>
+    <string name="fart_19">Fatty Fart</string>
+    <string name="fart_20"></string>
+    <string name="fart_21">Deflate</string>
+    <string name="fart_22"></string>
+    <string name="fart_23">Oldie</string>
+    <string name="fart_24">Splashy</string>
+
+</resources>
