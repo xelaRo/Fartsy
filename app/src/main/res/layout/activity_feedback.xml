@@ -50,15 +50,14 @@
 
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:id="@+id/btnSendFeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/btn_send"
         android:textColor="@color/dark"
-        app:backgroundTint="@color/colorAccent"/>
+        android:background="@drawable/feedback_btn"/>
 
     </LinearLayout>
 </LinearLayout>

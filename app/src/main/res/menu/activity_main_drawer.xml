@@ -17,31 +17,12 @@
             android:icon="@drawable/ic_trap"
             android:title="@string/nav_trap" />
         <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_donate"
+            android:title="@string/nav_donate" />
+        <item
             android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_feedback"
             android:title="@string/nav_feedback" />
-
-        <!--<item-->
-            <!--android:id="@+id/nav_slideshow"-->
-            <!--android:icon="@drawable/ic_menu_slideshow"-->
-            <!--android:title="Slideshow" />-->
-        <!--<item-->
-            <!--android:id="@+id/nav_manage"-->
-            <!--android:icon="@drawable/ic_menu_manage"-->
-            <!--android:title="Tools" />-->
     </group>
-
-    <!--<item android:title="Others">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/nav_feedback"-->
-                <!--android:icon="@drawable/ic_feedback"-->
-                <!--android:title="Share" />-->
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_send"-->
-                <!--android:title="Send" />-->
-        <!--</menu>-->
-    <!--</item>-->
-
 </menu>

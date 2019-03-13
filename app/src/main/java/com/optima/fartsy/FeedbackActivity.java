@@ -1,15 +1,14 @@
-package www.nexus.ro.fartapp;
+package com.optima.fartsy;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 /**
@@ -36,7 +35,7 @@ public class FeedbackActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        AppCompatButton button = findViewById(R.id.btnSendFeedback);
+        Button button = findViewById(R.id.btnSendFeedback);
         final EditText etSubject = findViewById(R.id.et_subject);
         final EditText etMessage = findViewById(R.id.et_message);
 

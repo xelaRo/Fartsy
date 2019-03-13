@@ -1,10 +1,11 @@
-package www.nexus.ro.fartapp;
+package com.optima.fartsy;
 
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
 
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Created by Alex on 2/10/2019.
@@ -68,6 +69,15 @@ public class SoundPoolSounds implements ISoundPoolSounds {
             mSoundPool.release();
             mSoundPool = null;
         }
+    }
+
+    public int getRandomNumber(){
+        Random r = new Random();
+        int Low = 0;
+        int High = 23;
+        int rndm = r.nextInt(High-Low) + Low;
+
+        return  rndm;
     }
 
 }

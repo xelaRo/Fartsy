@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Fartsy</string>
-
-
+    <string name="facebook_app_id">267276493987524</string>
+    <string name="share">ShareImage</string>
     <!--Main Screen-->
     <string name="main_btn_Text">Fart</string>
+    <string name="rate_app_title">Rate Fartsy</string>
+    <string name="rate_app_message">If you enjoy using Fartsy, please take a moment to rate it. Thanks for your support!</string>
 
     <!--Feedback Screen-->
     <string name="et_subject">Subject</string>
@@ -15,12 +17,13 @@
     <string name="nav_fart_list">Fart List</string>
     <string name="nav_crono">Fart Prank</string>
     <string name="nav_trap">Fart Trap</string>
+    <string name="nav_donate">Donate</string>
     <string name="nav_feedback">Feedback</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+
 
     <!--Fart List-->
     <string name="fart_1">Blowing</string>

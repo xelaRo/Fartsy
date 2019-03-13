@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1029572595148",
+    "firebase_url": "https://optima-studio-projects.firebaseio.com",
+    "project_id": "optima-studio-projects",
+    "storage_bucket": "optima-studio-projects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029572595148:android:931c18cb17dfd991",
+        "android_client_info": {
+          "package_name": "com.optima.fartsy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029572595148-415mf82ohnjuj6i25l10ec97poknea9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbOJYMGQVKNGpYKf32OP_MMJGP3Yn8JGU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

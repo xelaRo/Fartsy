@@ -22,14 +22,29 @@
             android:id="@+id/toolbar_title"
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
     </android.support.v7.widget.Toolbar>
-
-
-    <Button
-        android:id="@+id/fart_trap_btn"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Start Fart Trap"/>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start fart trap and leave the phone locked on a surface, then ask a friend to give it to you! See what happens. :)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+
+        <ImageButton
+            android:id="@+id/fart_trap_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/main_btn_Text"
+            android:src="@drawable/trap_btn"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/ad_holder"

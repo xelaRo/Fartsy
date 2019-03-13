@@ -1,4 +1,4 @@
-package www.nexus.ro.fartapp;
+package com.optima.fartsy;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 /**
  * Created by Alex on 2/10/2019.
@@ -63,8 +62,7 @@ public class CronoActivity extends AppCompatActivity {
                    startCountDown(time * 1000);
                    btnStart.setEnabled(false);
                    btnStop.setEnabled(true);
-               }else{
-
+                   et_time.setText("");
                }
             }
         });
@@ -78,6 +76,7 @@ public class CronoActivity extends AppCompatActivity {
                 tv_count.setText("00:00");
                 btnStart.setEnabled(true);
                 btnStop.setEnabled(false);
+                et_time.setText("");
             }
         });
 
@@ -85,10 +84,22 @@ public class CronoActivity extends AppCompatActivity {
         btnStop.setEnabled(false);
 
         //      ADMOB
-        MobileAds.initialize(this, "ca-app-pub-7794688344285417~5407186226");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        mISoundPoolSounds.resetSounds();
+        mISoundPoolSounds.setFartSounds(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mISoundPoolSounds.resetSounds();
     }
 
     @Override
@@ -111,7 +122,8 @@ public class CronoActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-                mISoundPoolSounds.playSound(1, CronoActivity.this, true);
+                int i = mISoundPoolSounds.getRandomNumber();
+                mISoundPoolSounds.playSound(i, CronoActivity.this, true);
             }
         };
         cT.start();

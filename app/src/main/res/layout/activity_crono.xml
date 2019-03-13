@@ -27,7 +27,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center_vertical|center_horizontal"
             android:layout_centerInParent="true"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
@@ -44,25 +43,24 @@
                 android:id="@+id/et_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Enter time in seconds!"
+                android:textSize="26sp"
+                android:hint="Enter time in seconds"
                 android:inputType="number"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
 
-
-            <android.support.v7.widget.AppCompatButton
+            <Button
                 android:id="@+id/btn_crono_start"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Start"
-                android:background="@color/colorAccent"
+                android:background="@drawable/start_btn"
                 android:layout_marginBottom="10dp"/>
 
-            <android.support.v7.widget.AppCompatButton
+            <Button
                 android:id="@+id/btn_crono_stop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stop"
-                android:background="@color/colorAccent"/>
+                android:background="@drawable/stop_btn"/>
         </LinearLayout>
 
     <RelativeLayout

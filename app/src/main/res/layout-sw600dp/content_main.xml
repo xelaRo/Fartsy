@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="www.nexus.ro.fartapp.MainActivity"
+    tools:context="com.optima.fartsy.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:background="@null"
             android:contentDescription="@string/main_btn_Text"
-            android:src="@drawable/fart_btn" />
+            android:src="@drawable/fart_btn_lg" />
     </LinearLayout>
 
     <RelativeLayout

@@ -1,31 +1,26 @@
-package www.nexus.ro.fartapp;
+package com.optima.fartsy;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-
 public class FartTrapCustomDialogClass extends Dialog implements
         android.view.View.OnClickListener{
 
-    private ISoundPoolSounds mISoundPoolSounds;
     public Activity activity;
     public Button cancel;
     public TextView tv_count;
+    public IFartTrap mIFartTrap;
 
     public FartTrapCustomDialogClass(Activity activity) {
         super(activity);
         // TODO Auto-generated constructor stub
         this.activity = activity;
-        this.mISoundPoolSounds = new SoundPoolSounds();
+        mIFartTrap = (FartTrapActivity)activity;
     }
 
     @Override
@@ -36,35 +31,20 @@ public class FartTrapCustomDialogClass extends Dialog implements
         cancel = (Button) findViewById(R.id.btn_cancel);
         tv_count = (TextView) findViewById(R.id.tv_count);
         cancel.setOnClickListener(this);
-        startCountDown();
+        mIFartTrap.startCountdown(tv_count);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_cancel:
+                mIFartTrap.cancelCountDown();
                 dismiss();
                 break;
             default:
                 break;
         }
         dismiss();
-    }
-
-    public void startCountDown(){
-
-        CountDownTimer cT =  new CountDownTimer(6000, 1000) {
-            public void onTick(long millisUntilFinished) {
-                String v = String.format("%02d", millisUntilFinished/60000);
-                int va = (int)( (millisUntilFinished%60000)/1000);
-                tv_count.setText(v+":"+String.format("%02d",va));
-            }
-
-            public void onFinish() {
-                mISoundPoolSounds.playSound(1, activity, true);
-            }
-        };
-        cT.start();
     }
 }
 

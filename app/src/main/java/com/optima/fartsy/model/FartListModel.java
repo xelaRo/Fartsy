@@ -1,6 +1,4 @@
-package www.nexus.ro.fartapp.model;
-
-import java.util.ArrayList;
+package com.optima.fartsy.model;
 
 public class FartListModel {
     public String buttonText;

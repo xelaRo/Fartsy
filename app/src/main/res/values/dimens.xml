@@ -16,7 +16,7 @@
     <dimen name="cv_cell_roundness">8dp</dimen>
 
     <!--Text Dimens-->
-    <dimen name="tv_cell_textSize">18sp</dimen>
+    <dimen name="tv_cell_textSize">23sp</dimen>
     <dimen name="tv_cell_textSize_tablet">30sp</dimen>
 
     <!--Title Dimens-->
