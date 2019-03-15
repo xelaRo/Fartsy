@@ -10,7 +10,7 @@
         </shape>
     </item>
     <item>
-        <bitmap android:src="@mipmap/ic_launcher"
+        <bitmap android:src="@drawable/fartsy_icon_splashscreen"
                 android:gravity="center"/>
     </item>
 </layer-list>

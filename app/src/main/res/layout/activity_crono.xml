@@ -25,19 +25,29 @@
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
     </android.support.v7.widget.Toolbar>
 
+    <ImageView
+        android:id="@+id/iv_bomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bomb_lg"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_below="@+id/toolbar">
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/iv_bomb">
 
             <TextView
                 android:id="@+id/tv_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="32sp"
+                android:textSize="44sp"
                 android:text="00:00"
                 android:textAlignment="center"/>
 
@@ -49,6 +59,7 @@
                 android:hint="Enter time in seconds"
                 android:inputType="number"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"/>
 
             <Button
@@ -56,13 +67,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/start_btn"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
 
             <Button
                 android:id="@+id/btn_crono_stop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/stop_btn"/>
+                android:background="@drawable/stop_btn"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
         </LinearLayout>
 
     <RelativeLayout

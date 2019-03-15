@@ -43,8 +43,7 @@ public class FeedbackActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String[] addresses = {"std.avalon@gmail.com"};
-
+                String[] addresses = {"optima.std@gmail.com"};
                 composeEmail(addresses,etSubject.getText().toString(),etMessage.getText().toString());
             }
         });
@@ -62,7 +61,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
     public void SendMail(String subject, String message){
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto","xgangstazonex@gmail.com", null));
+                "mailto","optima.std@gmail.com", null));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
         emailIntent.putExtra(Intent.EXTRA_TEXT, message);
         startActivity(Intent.createChooser(emailIntent, "Send email..."));

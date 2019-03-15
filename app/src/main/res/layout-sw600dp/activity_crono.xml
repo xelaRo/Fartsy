@@ -25,45 +25,60 @@
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
     </android.support.v7.widget.Toolbar>
 
-        <LinearLayout
+    <ImageView
+        android:id="@+id/iv_bomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bomb_vlg"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/iv_bomb">
+
+        <TextView
+            android:id="@+id/tv_count"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_below="@+id/toolbar">
+            android:textSize="48sp"
+            android:text="00:00"
+            android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_count"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="32sp"
-                android:text="00:00"
-                android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="32sp"
+            android:hint="Enter time in seconds"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
 
-            <EditText
-                android:id="@+id/et_time"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="18sp"
-                android:hint="Enter time in seconds"
-                android:inputType="number"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_crono_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/start_btn"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="90dp"/>
 
-            <Button
-                android:id="@+id/btn_crono_start"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/start_btn"
-                android:layout_marginBottom="10dp"/>
-
-            <Button
-                android:id="@+id/btn_crono_stop"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/stop_btn"/>
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_crono_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stop_btn"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="90dp"/>
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/ad_holder"
