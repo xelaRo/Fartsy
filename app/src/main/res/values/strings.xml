@@ -6,7 +6,7 @@
     <string name="main_btn_Text">Fart</string>
     <string name="rate_app_title">Rate Fartsy</string>
     <string name="rate_app_message">If you enjoy using Fartsy, please take a moment to rate it. Thanks for your support!</string>
-
+    <string name="facebook_share_button">Share</string>
     <!--Feedback Screen-->
     <string name="et_subject">Subject</string>
     <string name="et_message">Message</string>

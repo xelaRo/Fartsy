@@ -1,5 +1,6 @@
 package com.optima.fartsy;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -13,7 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
+import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.model.SharePhoto;
+import com.facebook.share.widget.ShareButton;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity
 
     private ISoundPoolSounds mISoundPoolSounds;
     private ImageButton btn_Fart;
+    private ShareButton shareButton;
     private AdView mAdView;
     private FirebaseAnalytics mFirebaseAnalytics;
     private SharePhoto mSharePhoto;
@@ -61,6 +65,8 @@ public class MainActivity extends AppCompatActivity
         mISoundPoolSounds.setFartSounds(this);
 
         btn_Fart = findViewById(R.id.btn_Fart);
+        shareButton = findViewById(R.id.fb_share_button);
+
 
 
         btn_Fart.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +76,11 @@ public class MainActivity extends AppCompatActivity
                 mISoundPoolSounds.playSound(i, MainActivity.this,false);
             }
         });
+
+        ShareLinkContent content = new ShareLinkContent.Builder()
+                .setContentUrl(Uri.parse("https://developers.facebook.com"))
+                .build();
+
 
 //      Firebase
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
@@ -127,9 +138,12 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_share) {
-            return true;
+            ShareLinkContent content = new ShareLinkContent.Builder()
+                    .setContentUrl(Uri.parse("https://developers.facebook.com"))
+                    .build();
+            shareButton.setShareContent(content);
+            shareButton.performClick();
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -190,7 +204,7 @@ public class MainActivity extends AppCompatActivity
                 .setRemindInterval((byte) 2) // default 1
                 .setRemindLaunchTimes((byte) 2) // default 1 (each launch)
                 .setShowLaterButton(true) // default true
-                .setDebug(true) // default false
+                .setDebug(false) // default false
                 //Java 8+: .setOnClickButtonListener(which -> Log.d(MainActivity.class.getName(), Byte.toString(which)))
                 .setOnClickButtonListener(new OnClickButtonListener() { // callback listener.
                     @Override

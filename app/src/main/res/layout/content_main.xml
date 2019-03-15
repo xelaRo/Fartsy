@@ -25,6 +25,14 @@
             android:src="@drawable/fart_btn" />
     </LinearLayout>
 
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/fb_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook_share_button"
+        android:textAllCaps="true"
+        android:visibility="gone" />
+
     <RelativeLayout
         android:id="@+id/ad_holder"
         android:layout_width="match_parent"
