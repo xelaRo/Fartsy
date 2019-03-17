@@ -10,7 +10,7 @@
             android:title="@string/nav_fart_list" />
         <item
             android:id="@+id/nav_crono"
-            android:icon="@drawable/ic_timer"
+            android:icon="@drawable/ic_grenade"
             android:title="@string/nav_crono" />
         <item
             android:id="@+id/nav_trap"

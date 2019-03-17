@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Fart Trap Screen-->
-<dimen name="tv_textsize">28sp</dimen>
+<dimen name="tv_textsize">18sp</dimen>
+
+    <!--Fart Prank Screen-->
+    <dimen name="tv_timersize">34sp</dimen>
+    <dimen name="tv_donate_textsize">25sp</dimen>
 </resources>

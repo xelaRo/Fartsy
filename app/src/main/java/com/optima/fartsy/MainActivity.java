@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity
         });
 
         ShareLinkContent content = new ShareLinkContent.Builder()
-                .setContentUrl(Uri.parse("https://developers.facebook.com"))
+                .setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.optima.fartsy"))
                 .build();
 
 
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity
 //      RATE
         appRate();
 //      ADMOB
-        MobileAds.initialize(this, "ca-app-pub-7794688344285417~5407186226");
+        //MobileAds.initialize(this, "ca-app-pub-4123877177396127~6931692281");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -115,7 +115,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);        if (drawer.isDrawerOpen(GravityCompat.START)) {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_share) {
             ShareLinkContent content = new ShareLinkContent.Builder()
-                    .setContentUrl(Uri.parse("https://developers.facebook.com"))
+                    .setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.optima.fartsy"))
                     .build();
             shareButton.setShareContent(content);
             shareButton.performClick();
@@ -204,7 +205,7 @@ public class MainActivity extends AppCompatActivity
                 .setRemindInterval((byte) 2) // default 1
                 .setRemindLaunchTimes((byte) 2) // default 1 (each launch)
                 .setShowLaterButton(true) // default true
-                .setDebug(false) // default false
+                .setDebug(true) // default false
                 //Java 8+: .setOnClickButtonListener(which -> Log.d(MainActivity.class.getName(), Byte.toString(which)))
                 .setOnClickButtonListener(new OnClickButtonListener() { // callback listener.
                     @Override

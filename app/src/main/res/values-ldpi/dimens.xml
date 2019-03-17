@@ -2,4 +2,5 @@
 <resources>
     <!--Fart Trap Screen-->
 <dimen name="tv_textsize">28sp</dimen>
+    <dimen name="tv_donate_textsize">25sp</dimen>
 </resources>

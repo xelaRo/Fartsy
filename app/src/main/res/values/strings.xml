@@ -12,10 +12,14 @@
     <string name="et_message">Message</string>
     <string name="btn_send">Send Feedback</string>
 
+    <!--Fart Trap Screen-->
+    <string name="tv_farttrap">Start fart trap and leave the phone locked on a surface, then ask a friend to give it to you! See what happens. :)</string>
+    <!--Donate-->
+    <string name="tv_donate">If you like Fartsy please provide us with a donation. We are deeply grateful!</string>
 
     <!--NAV-->
     <string name="nav_fart_list">Fart List</string>
-    <string name="nav_crono">Fart Prank</string>
+    <string name="nav_crono">Fart Bomb</string>
     <string name="nav_trap">Fart Trap</string>
     <string name="nav_donate">Donate</string>
     <string name="nav_feedback">Feedback</string>
@@ -50,5 +54,6 @@
     <string name="fart_22"></string>
     <string name="fart_23">Oldie</string>
     <string name="fart_24">Splashy</string>
+
 
 </resources>

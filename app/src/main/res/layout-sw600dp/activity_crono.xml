@@ -29,7 +29,7 @@
         android:id="@+id/iv_bomb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_bomb_vlg"
+        android:src="@drawable/ic_bomb"
         android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"/>
@@ -66,7 +66,7 @@
             android:id="@+id/btn_crono_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/start_btn"
+            android:background="@drawable/start_btn2"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="80dp"
             android:layout_marginLeft="90dp"/>
@@ -75,7 +75,7 @@
             android:id="@+id/btn_crono_stop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/stop_btn"
+            android:background="@drawable/stop_btn2"
             android:layout_marginRight="80dp"
             android:layout_marginLeft="90dp"/>
     </LinearLayout>
@@ -93,7 +93,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+            ads:adUnitId="ca-app-pub-4123877177396127/1104650531"/>
 
     </RelativeLayout>
 

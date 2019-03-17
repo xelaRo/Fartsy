@@ -31,28 +31,29 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/paypal_logo"
+            android:background="@drawable/paypal_logo2"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="35dp"
             android:text="@string/tv_donate"
             android:textStyle="bold"
-            android:textSize="24sp"/>
+            android:textSize="@dimen/tv_donate_textsize"/>
 
         <Button
             android:id="@+id/btn_donate"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="45dp"
             android:layout_marginRight="15dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/donate_btn"/>
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/donate_btn2"/>
     </LinearLayout>
 
 </LinearLayout>
