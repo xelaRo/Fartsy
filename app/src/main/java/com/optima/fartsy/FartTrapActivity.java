@@ -76,6 +76,7 @@ public class FartTrapActivity extends AppCompatActivity implements IFartTrap, Se
             public void onClick(View v) {
                 fartTrapCustomDialogClass = new FartTrapCustomDialogClass(FartTrapActivity.this);
                 fartTrapCustomDialogClass.show();
+                fartTrapCustomDialogClass.setCanceledOnTouchOutside(false);
             }
         });
 

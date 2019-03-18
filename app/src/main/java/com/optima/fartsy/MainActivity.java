@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity
 //      RATE
         appRate();
 //      ADMOB
-        //MobileAds.initialize(this, "ca-app-pub-4123877177396127~6931692281");
+        MobileAds.initialize(this, "ca-app-pub-4123877177396127~6931692281");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity
                 .setRemindInterval((byte) 2) // default 1
                 .setRemindLaunchTimes((byte) 2) // default 1 (each launch)
                 .setShowLaterButton(true) // default true
-                .setDebug(true) // default false
+                .setDebug(false) // default false
                 //Java 8+: .setOnClickButtonListener(which -> Log.d(MainActivity.class.getName(), Byte.toString(which)))
                 .setOnClickButtonListener(new OnClickButtonListener() { // callback listener.
                     @Override

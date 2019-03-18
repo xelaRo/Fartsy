@@ -31,10 +31,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start fart trap and leave the phone locked on a surface, then ask a friend to give it to you! See what happens. :)"
+            android:text="@string/tv_farttrap"
             android:textSize="@dimen/tv_textsize"
             android:textStyle="bold"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"/>
 
         <ImageButton
             android:id="@+id/fart_trap_btn"

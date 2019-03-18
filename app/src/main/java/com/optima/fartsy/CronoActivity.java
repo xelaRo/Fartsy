@@ -99,14 +99,19 @@ public class CronoActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        mISoundPoolSounds.resetSounds();
-        mISoundPoolSounds.setFartSounds(this);
+//        mISoundPoolSounds.resetSounds();
+//        mISoundPoolSounds.setFartSounds(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mISoundPoolSounds.resetSounds();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 
     @Override

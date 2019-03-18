@@ -32,6 +32,7 @@ public class FartTrapCustomDialogClass extends Dialog implements
         tv_count = (TextView) findViewById(R.id.tv_count);
         cancel.setOnClickListener(this);
         mIFartTrap.startCountdown(tv_count);
+
     }
 
     @Override
